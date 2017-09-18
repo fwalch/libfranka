@@ -1,0 +1,36 @@
+sudo: required
+language: none
+
+services:
+  - docker
+
+before_install:
+  - sudo apt-get update && sudo apt-get install -y bash curl
+  - docker build -t worker $TRAVIS_BUILD_DIR/.ci
+
+jobs:
+  include:
+    - stage: build
+      env: CI_TARGET=debug
+
+    - stage: build
+      env: CI_TARGET=release
+
+    - stage: build
+      env: CI_TARGET=coverage
+      after_success: bash <(curl -s https://codecov.io/bash) || echo "Codecov upload failed."
+
+    - stage: lint
+      env: CI_TARGET=lint
+
+    - stage: documentation
+      env: CI_TARGET=doc
+      deploy:
+        provider: pages
+        skip_cleanup: true
+        github_token: $GITHUB_TOKEN
+        local_dir: $TRAVIS_BUILD_DIR/build-doc/doc/html
+        on:
+          branch: master
+
+script: docker run -w /workspace -v $TRAVIS_BUILD_DIR:/workspace worker /bin/sh -c ".ci/$CI_TARGET.sh"
