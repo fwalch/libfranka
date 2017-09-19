@@ -2,6 +2,7 @@
 // Use of this source code is governed by the Apache-2.0 license, see LICENSE
 #include "robot_impl.h"
 
+#include <iostream>
 #include <sstream>
 
 // `using std::string_literals::operator""s` produces a GCC warning that cannot be disabled, so we
@@ -60,6 +61,47 @@ RobotState Robot::Impl::readOnce() {
   // Delete old data from the UDP buffer.
   research_interface::robot::RobotState robot_state;
   while (network_->udpReceive<decltype(robot_state)>(&robot_state)) {
+  }
+
+  if (robot_state.message_id >= 1e5) {
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
+    std::cout << "A" << std::endl;
   }
 
   return convertRobotState(receiveRobotState());
