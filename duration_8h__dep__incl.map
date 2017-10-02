@@ -1,0 +1,7 @@
+<map id="include/franka/duration.h" name="include/franka/duration.h">
+<area shape="rect" id="node2" href="$gripper__state_8h.html" title="Contains the franka::GripperState type. " alt="" coords="29,80,189,121"/>
+<area shape="rect" id="node4" href="$robot_8h.html" title="Contains the franka::Robot type. " alt="" coords="201,169,362,196"/>
+<area shape="rect" id="node6" href="$robot__state_8h.html" title="Contains the franka::RobotState types. " alt="" coords="300,80,449,121"/>
+<area shape="rect" id="node3" href="$gripper_8h.html" title="Contains the franka::Gripper type. " alt="" coords="5,169,176,196"/>
+<area shape="rect" id="node5" href="$model_8h.html" title="Contains model library types. " alt="" coords="257,244,423,271"/>
+</map>

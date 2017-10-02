@@ -1,0 +1,7 @@
+<map id="franka::Finishable" name="franka::Finishable">
+<area shape="rect" id="node2" href="$classfranka_1_1CartesianPose.html" title="Stores values for Cartesian pose motion generation. " alt="" coords="199,5,362,32"/>
+<area shape="rect" id="node3" href="$classfranka_1_1CartesianVelocities.html" title="Stores values for Cartesian velocity motion generation. " alt="" coords="185,56,376,83"/>
+<area shape="rect" id="node4" href="$classfranka_1_1JointPositions.html" title="Stores values for joint position motion generation. " alt="" coords="203,107,358,133"/>
+<area shape="rect" id="node5" href="$classfranka_1_1JointVelocities.html" title="Stores values for joint velocity motion generation. " alt="" coords="202,157,359,184"/>
+<area shape="rect" id="node6" href="$classfranka_1_1Torques.html" title="Stores values for torque control. " alt="" coords="221,208,340,235"/>
+</map>

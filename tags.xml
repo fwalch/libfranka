@@ -1,0 +1,1770 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile>
+  <compound kind="file">
+    <name>command_types.h</name>
+    <path>/workspace/include/franka/</path>
+    <filename>command__types_8h</filename>
+    <class kind="struct">franka::VirtualWallCuboid</class>
+  </compound>
+  <compound kind="file">
+    <name>control_types.h</name>
+    <path>/workspace/include/franka/</path>
+    <filename>control__types_8h</filename>
+    <class kind="struct">franka::Finishable</class>
+    <class kind="class">franka::Torques</class>
+    <class kind="class">franka::JointPositions</class>
+    <class kind="class">franka::JointVelocities</class>
+    <class kind="class">franka::CartesianPose</class>
+    <class kind="class">franka::CartesianVelocities</class>
+    <member kind="enumeration">
+      <type></type>
+      <name>ControllerMode</name>
+      <anchorfile>control__types_8h.html</anchorfile>
+      <anchor>a3e20bc77587e2c0c53598753e3f4816b</anchor>
+      <arglist></arglist>
+      <enumvalue file="control__types_8h.html" anchor="a3e20bc77587e2c0c53598753e3f4816baa7cd8fc7552b5b9c50684e57f032d724">kJointImpedance</enumvalue>
+      <enumvalue file="control__types_8h.html" anchor="a3e20bc77587e2c0c53598753e3f4816bac2c3f2cf686f3debef77b3049958b488">kCartesianImpedance</enumvalue>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>RealtimeConfig</name>
+      <anchorfile>control__types_8h.html</anchorfile>
+      <anchor>aeede4f4629390fea21ca5e5a35a8a943</anchor>
+      <arglist></arglist>
+      <enumvalue file="control__types_8h.html" anchor="aeede4f4629390fea21ca5e5a35a8a943a024bd586d70db805d622b85815bfa0de">kEnforce</enumvalue>
+      <enumvalue file="control__types_8h.html" anchor="aeede4f4629390fea21ca5e5a35a8a943aa7c4e68b845afc4ee4dcaf41b0b503e4">kIgnore</enumvalue>
+    </member>
+    <member kind="function">
+      <type>Torques</type>
+      <name>MotionFinished</name>
+      <anchorfile>control__types_8h.html</anchorfile>
+      <anchor>ab44af240186b58cf3b59cf0fed476f33</anchor>
+      <arglist>(const Torques &amp;command)</arglist>
+    </member>
+    <member kind="function">
+      <type>JointPositions</type>
+      <name>MotionFinished</name>
+      <anchorfile>control__types_8h.html</anchorfile>
+      <anchor>a40950b9cb7c884b2934cc642ecee4caa</anchor>
+      <arglist>(const JointPositions &amp;command)</arglist>
+    </member>
+    <member kind="function">
+      <type>JointVelocities</type>
+      <name>MotionFinished</name>
+      <anchorfile>control__types_8h.html</anchorfile>
+      <anchor>acc20b7f208cee65b23d799bff3d51655</anchor>
+      <arglist>(const JointVelocities &amp;command)</arglist>
+    </member>
+    <member kind="function">
+      <type>CartesianPose</type>
+      <name>MotionFinished</name>
+      <anchorfile>control__types_8h.html</anchorfile>
+      <anchor>af31d15745038716242ae096d99fea47d</anchor>
+      <arglist>(const CartesianPose &amp;command)</arglist>
+    </member>
+    <member kind="function">
+      <type>CartesianVelocities</type>
+      <name>MotionFinished</name>
+      <anchorfile>control__types_8h.html</anchorfile>
+      <anchor>a6225fb95e173faab34da66b551a80483</anchor>
+      <arglist>(const CartesianVelocities &amp;command)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>duration.h</name>
+    <path>/workspace/include/franka/</path>
+    <filename>duration_8h</filename>
+    <class kind="class">franka::Duration</class>
+    <member kind="function">
+      <type>Duration</type>
+      <name>operator*</name>
+      <anchorfile>duration_8h.html</anchorfile>
+      <anchor>ab3a36a47682756845ef855994aadd7b6</anchor>
+      <arglist>(uint64_t lhs, const Duration &amp;rhs) noexcept</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>errors.h</name>
+    <path>/workspace/include/franka/</path>
+    <filename>errors_8h</filename>
+    <class kind="struct">franka::Errors</class>
+    <member kind="function">
+      <type>std::ostream &amp;</type>
+      <name>operator&lt;&lt;</name>
+      <anchorfile>errors_8h.html</anchorfile>
+      <anchor>ad1027058086c3c154f4bbc9cade1f197</anchor>
+      <arglist>(std::ostream &amp;ostream, const Errors &amp;errors)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>exception.h</name>
+    <path>/workspace/include/franka/</path>
+    <filename>exception_8h</filename>
+    <class kind="struct">franka::Exception</class>
+    <class kind="struct">franka::ModelException</class>
+    <class kind="struct">franka::NetworkException</class>
+    <class kind="struct">franka::ProtocolException</class>
+    <class kind="struct">franka::IncompatibleVersionException</class>
+    <class kind="struct">franka::ControlException</class>
+    <class kind="struct">franka::CommandException</class>
+    <class kind="struct">franka::RealtimeException</class>
+    <class kind="struct">franka::InvalidOperationException</class>
+  </compound>
+  <compound kind="file">
+    <name>gripper.h</name>
+    <path>/workspace/include/franka/</path>
+    <filename>gripper_8h</filename>
+    <includes id="gripper__state_8h" name="gripper_state.h" local="no" imported="no">franka/gripper_state.h</includes>
+    <class kind="class">franka::Gripper</class>
+  </compound>
+  <compound kind="file">
+    <name>gripper_state.h</name>
+    <path>/workspace/include/franka/</path>
+    <filename>gripper__state_8h</filename>
+    <includes id="duration_8h" name="duration.h" local="no" imported="no">franka/duration.h</includes>
+    <class kind="struct">franka::GripperState</class>
+    <member kind="function">
+      <type>std::ostream &amp;</type>
+      <name>operator&lt;&lt;</name>
+      <anchorfile>gripper__state_8h.html</anchorfile>
+      <anchor>ab66181a74d1d3b7e90ae3b424ee85f4f</anchor>
+      <arglist>(std::ostream &amp;ostream, const franka::GripperState &amp;gripper_state)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>model.h</name>
+    <path>/workspace/include/franka/</path>
+    <filename>model_8h</filename>
+    <includes id="robot_8h" name="robot.h" local="no" imported="no">franka/robot.h</includes>
+    <includes id="robot__state_8h" name="robot_state.h" local="no" imported="no">franka/robot_state.h</includes>
+    <class kind="class">franka::Model</class>
+    <member kind="enumeration">
+      <type></type>
+      <name>Frame</name>
+      <anchorfile>model_8h.html</anchorfile>
+      <anchor>a00b729ddce916481d3f0d10febec4f5b</anchor>
+      <arglist></arglist>
+      <enumvalue file="model_8h.html" anchor="a00b729ddce916481d3f0d10febec4f5ba63d7910434fd319f86f05a4f0210dc26">kJoint1</enumvalue>
+      <enumvalue file="model_8h.html" anchor="a00b729ddce916481d3f0d10febec4f5ba568ae979341feef702b710374046568a">kJoint2</enumvalue>
+      <enumvalue file="model_8h.html" anchor="a00b729ddce916481d3f0d10febec4f5baa9878edbe51d6b7f7a748103fae58a9d">kJoint3</enumvalue>
+      <enumvalue file="model_8h.html" anchor="a00b729ddce916481d3f0d10febec4f5baee68341b1d0398c4cf2b5fc46bf23936">kJoint4</enumvalue>
+      <enumvalue file="model_8h.html" anchor="a00b729ddce916481d3f0d10febec4f5bab59c412f96c1d2e2c4d89fb32d4a647e">kJoint5</enumvalue>
+      <enumvalue file="model_8h.html" anchor="a00b729ddce916481d3f0d10febec4f5ba36035e6e54fca79a6959d78e25a079a4">kJoint6</enumvalue>
+      <enumvalue file="model_8h.html" anchor="a00b729ddce916481d3f0d10febec4f5baeb10b1b7bf0eff68e741b654c9ab7aef">kJoint7</enumvalue>
+      <enumvalue file="model_8h.html" anchor="a00b729ddce916481d3f0d10febec4f5ba44dcff883faf38ca9a05c8586b5f59c8">kFlange</enumvalue>
+      <enumvalue file="model_8h.html" anchor="a00b729ddce916481d3f0d10febec4f5ba3617dcc7555dbca3c3e86e7535914fdf">kEndEffector</enumvalue>
+    </member>
+    <member kind="function">
+      <type>Frame</type>
+      <name>operator++</name>
+      <anchorfile>model_8h.html</anchorfile>
+      <anchor>ae39c3a098fdb1bc9a097a262312454d0</anchor>
+      <arglist>(Frame &amp;frame, int) noexcept</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>robot.h</name>
+    <path>/workspace/include/franka/</path>
+    <filename>robot_8h</filename>
+    <includes id="command__types_8h" name="command_types.h" local="no" imported="no">franka/command_types.h</includes>
+    <includes id="control__types_8h" name="control_types.h" local="no" imported="no">franka/control_types.h</includes>
+    <includes id="duration_8h" name="duration.h" local="no" imported="no">franka/duration.h</includes>
+    <includes id="robot__state_8h" name="robot_state.h" local="no" imported="no">franka/robot_state.h</includes>
+    <class kind="class">franka::Robot</class>
+  </compound>
+  <compound kind="file">
+    <name>robot_state.h</name>
+    <path>/workspace/include/franka/</path>
+    <filename>robot__state_8h</filename>
+    <includes id="duration_8h" name="duration.h" local="no" imported="no">franka/duration.h</includes>
+    <includes id="errors_8h" name="errors.h" local="no" imported="no">franka/errors.h</includes>
+    <class kind="struct">franka::RobotState</class>
+    <member kind="enumeration">
+      <type></type>
+      <name>RobotMode</name>
+      <anchorfile>robot__state_8h.html</anchorfile>
+      <anchor>adfe059ae23ebbad59e421edaa879651a</anchor>
+      <arglist></arglist>
+      <enumvalue file="robot__state_8h.html" anchor="adfe059ae23ebbad59e421edaa879651aa341b8a8f03cf33821c46aa5c3aad4b7a">kOther</enumvalue>
+      <enumvalue file="robot__state_8h.html" anchor="adfe059ae23ebbad59e421edaa879651aaf5137a026a4b2f3b1c8a21cfc60dd14b">kIdle</enumvalue>
+      <enumvalue file="robot__state_8h.html" anchor="adfe059ae23ebbad59e421edaa879651aae54c7412401b5e36c1c254e6fb17a3dd">kMove</enumvalue>
+      <enumvalue file="robot__state_8h.html" anchor="adfe059ae23ebbad59e421edaa879651aa3f62c59dc456d870c5232af7b73944ea">kGuiding</enumvalue>
+      <enumvalue file="robot__state_8h.html" anchor="adfe059ae23ebbad59e421edaa879651aa24a5ddd7430a2592185005fce3881f62">kReflex</enumvalue>
+      <enumvalue file="robot__state_8h.html" anchor="adfe059ae23ebbad59e421edaa879651aaaef321f1c9c879b98c2bcd307ad2305f">kUserStopped</enumvalue>
+      <enumvalue file="robot__state_8h.html" anchor="adfe059ae23ebbad59e421edaa879651aab37e3f1dba8351f3745083064998b35f">kAutomaticErrorRecovery</enumvalue>
+    </member>
+    <member kind="function">
+      <type>std::ostream &amp;</type>
+      <name>operator&lt;&lt;</name>
+      <anchorfile>robot__state_8h.html</anchorfile>
+      <anchor>aee38e87180cc96476d0f11335da29e20</anchor>
+      <arglist>(std::ostream &amp;ostream, const franka::RobotState &amp;robot_state)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>franka::CartesianPose</name>
+    <filename>classfranka_1_1CartesianPose.html</filename>
+    <base>franka::Finishable</base>
+    <member kind="function">
+      <type></type>
+      <name>CartesianPose</name>
+      <anchorfile>classfranka_1_1CartesianPose.html</anchorfile>
+      <anchor>a7ea70bbe857442bd8974905cb86aea00</anchor>
+      <arglist>(const std::array&lt; double, 16 &gt; &amp;cartesian_pose)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>CartesianPose</name>
+      <anchorfile>classfranka_1_1CartesianPose.html</anchorfile>
+      <anchor>a70b6460e98bc763a49c53accd48d54a2</anchor>
+      <arglist>(std::initializer_list&lt; double &gt; cartesian_pose)</arglist>
+    </member>
+    <member kind="variable">
+      <type>std::array&lt; double, 16 &gt;</type>
+      <name>O_T_EE</name>
+      <anchorfile>classfranka_1_1CartesianPose.html</anchorfile>
+      <anchor>a406e53e3d8fe594a11888f516eb4bf7d</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>franka::CartesianVelocities</name>
+    <filename>classfranka_1_1CartesianVelocities.html</filename>
+    <base>franka::Finishable</base>
+    <member kind="function">
+      <type></type>
+      <name>CartesianVelocities</name>
+      <anchorfile>classfranka_1_1CartesianVelocities.html</anchorfile>
+      <anchor>afbc6a6e09eb42e68e91a8a442b2a5005</anchor>
+      <arglist>(const std::array&lt; double, 6 &gt; &amp;cartesian_velocities)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>CartesianVelocities</name>
+      <anchorfile>classfranka_1_1CartesianVelocities.html</anchorfile>
+      <anchor>a39c4b06c315c963460e24324de8ad079</anchor>
+      <arglist>(std::initializer_list&lt; double &gt; cartesian_velocities)</arglist>
+    </member>
+    <member kind="variable">
+      <type>std::array&lt; double, 6 &gt;</type>
+      <name>O_dP_EE</name>
+      <anchorfile>classfranka_1_1CartesianVelocities.html</anchorfile>
+      <anchor>ab7a42c7c1ee7109025aff5c43a56b398</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>franka::CommandException</name>
+    <filename>structfranka_1_1CommandException.html</filename>
+    <base>franka::Exception</base>
+  </compound>
+  <compound kind="struct">
+    <name>franka::ControlException</name>
+    <filename>structfranka_1_1ControlException.html</filename>
+    <base>franka::Exception</base>
+  </compound>
+  <compound kind="class">
+    <name>franka::Duration</name>
+    <filename>classfranka_1_1Duration.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>Duration</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>af721da321423772b4ce7ff11280d38d5</anchor>
+      <arglist>() noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Duration</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>a46f0cea3e05c27cdaaba5ff25e0e6cd6</anchor>
+      <arglist>(uint64_t milliseconds) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Duration</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>a389dfef50f34e9cc5be69838fbdafba7</anchor>
+      <arglist>(std::chrono::duration&lt; uint64_t, std::milli &gt; duration) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Duration</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>a886575e716b45e85de1bb78def2eb133</anchor>
+      <arglist>(const Duration &amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type>Duration &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>adf2fec0c87fe1668e42f217ab029df19</anchor>
+      <arglist>(const Duration &amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>operator std::chrono::duration&lt; uint64_t, std::milli &gt;</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>ae58e283f511f9de8ac7e145db5cac1cf</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>toSec</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>a497af77a3280159547f231f0374e9ac1</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>uint64_t</type>
+      <name>toMSec</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>a2a25ae33c8739b8f705f13798aa9e162</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Duration</type>
+      <name>operator+</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>adb459e7bf5c6b02f9e72c808f5f30237</anchor>
+      <arglist>(const Duration &amp;rhs) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Duration &amp;</type>
+      <name>operator+=</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>ac55eb81937a12e736560bd856a8f23ae</anchor>
+      <arglist>(const Duration &amp;rhs) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Duration</type>
+      <name>operator-</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>a2a3bc1a8278b91bebe88d7498d410de9</anchor>
+      <arglist>(const Duration &amp;rhs) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Duration &amp;</type>
+      <name>operator-=</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>acb24af377db86646918bcfb3e1e2ebe6</anchor>
+      <arglist>(const Duration &amp;rhs) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Duration</type>
+      <name>operator*</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>a3eebc39550880fb2d23d45ba34d8acc5</anchor>
+      <arglist>(uint64_t rhs) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Duration &amp;</type>
+      <name>operator*=</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>a73f971b2efb29a8ce663e8675d1ec09a</anchor>
+      <arglist>(uint64_t rhs) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>uint64_t</type>
+      <name>operator/</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>a90c76be31b53e11f5761416a05d990be</anchor>
+      <arglist>(const Duration &amp;rhs) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Duration</type>
+      <name>operator/</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>a15b7299198f36734b62ac98da1ef8c9c</anchor>
+      <arglist>(uint64_t rhs) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Duration &amp;</type>
+      <name>operator/=</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>ac866dd8d0e8f2dbb92089dbd78418571</anchor>
+      <arglist>(uint64_t rhs) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Duration</type>
+      <name>operator%</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>a5e472345c1bec29b645bee938932fdb1</anchor>
+      <arglist>(const Duration &amp;rhs) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Duration</type>
+      <name>operator%</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>af06ff91f24d881c479768c1bcbf31a1e</anchor>
+      <arglist>(uint64_t rhs) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Duration &amp;</type>
+      <name>operator%=</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>a97a6ea669877875ffc54c801ac0b152d</anchor>
+      <arglist>(const Duration &amp;rhs) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Duration &amp;</type>
+      <name>operator%=</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>acd85bab22062a2258af83ac5b3b7a647</anchor>
+      <arglist>(uint64_t rhs) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator==</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>add0c7bcdfe51b563016236b223d74eae</anchor>
+      <arglist>(const Duration &amp;rhs) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator!=</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>a61603353e39361af2f405c1df7097e84</anchor>
+      <arglist>(const Duration &amp;rhs) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator&lt;</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>af1650b31c1226a447406fc243f4a2ac1</anchor>
+      <arglist>(const Duration &amp;rhs) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator&lt;=</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>ae4b9c8646fd50a2105d36f3848a5b949</anchor>
+      <arglist>(const Duration &amp;rhs) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator&gt;</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>a1702ec9121fe6cff1de533d116edcce0</anchor>
+      <arglist>(const Duration &amp;rhs) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator&gt;=</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>a5bc498cf96d96f5908d6bd93eea491aa</anchor>
+      <arglist>(const Duration &amp;rhs) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Duration</type>
+      <name>operator+</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>adb459e7bf5c6b02f9e72c808f5f30237</anchor>
+      <arglist>(const Duration &amp;rhs) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Duration &amp;</type>
+      <name>operator+=</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>ac55eb81937a12e736560bd856a8f23ae</anchor>
+      <arglist>(const Duration &amp;rhs) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Duration</type>
+      <name>operator-</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>a2a3bc1a8278b91bebe88d7498d410de9</anchor>
+      <arglist>(const Duration &amp;rhs) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Duration &amp;</type>
+      <name>operator-=</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>acb24af377db86646918bcfb3e1e2ebe6</anchor>
+      <arglist>(const Duration &amp;rhs) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Duration</type>
+      <name>operator*</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>a3eebc39550880fb2d23d45ba34d8acc5</anchor>
+      <arglist>(uint64_t rhs) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Duration &amp;</type>
+      <name>operator*=</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>a73f971b2efb29a8ce663e8675d1ec09a</anchor>
+      <arglist>(uint64_t rhs) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>uint64_t</type>
+      <name>operator/</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>a90c76be31b53e11f5761416a05d990be</anchor>
+      <arglist>(const Duration &amp;rhs) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Duration</type>
+      <name>operator/</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>a15b7299198f36734b62ac98da1ef8c9c</anchor>
+      <arglist>(uint64_t rhs) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Duration &amp;</type>
+      <name>operator/=</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>ac866dd8d0e8f2dbb92089dbd78418571</anchor>
+      <arglist>(uint64_t rhs) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Duration</type>
+      <name>operator%</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>a5e472345c1bec29b645bee938932fdb1</anchor>
+      <arglist>(const Duration &amp;rhs) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Duration</type>
+      <name>operator%</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>af06ff91f24d881c479768c1bcbf31a1e</anchor>
+      <arglist>(uint64_t rhs) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Duration &amp;</type>
+      <name>operator%=</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>a97a6ea669877875ffc54c801ac0b152d</anchor>
+      <arglist>(const Duration &amp;rhs) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Duration &amp;</type>
+      <name>operator%=</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>acd85bab22062a2258af83ac5b3b7a647</anchor>
+      <arglist>(uint64_t rhs) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator==</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>add0c7bcdfe51b563016236b223d74eae</anchor>
+      <arglist>(const Duration &amp;rhs) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator!=</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>a61603353e39361af2f405c1df7097e84</anchor>
+      <arglist>(const Duration &amp;rhs) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator&lt;</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>af1650b31c1226a447406fc243f4a2ac1</anchor>
+      <arglist>(const Duration &amp;rhs) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator&lt;=</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>ae4b9c8646fd50a2105d36f3848a5b949</anchor>
+      <arglist>(const Duration &amp;rhs) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator&gt;</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>a1702ec9121fe6cff1de533d116edcce0</anchor>
+      <arglist>(const Duration &amp;rhs) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator&gt;=</name>
+      <anchorfile>classfranka_1_1Duration.html</anchorfile>
+      <anchor>a5bc498cf96d96f5908d6bd93eea491aa</anchor>
+      <arglist>(const Duration &amp;rhs) const noexcept</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>franka::Errors</name>
+    <filename>structfranka_1_1Errors.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>Errors</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>aedd6b6af230c01b6f106b5050b29d9ae</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Errors</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>a4548a72089cc6d61c9249a1b8f4cc480</anchor>
+      <arglist>(const Errors &amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type>Errors &amp;</type>
+      <name>operator=</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>a6fefa4083d79362080b79f3492fd4cb6</anchor>
+      <arglist>(Errors other)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Errors</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>a0df94207ff199f069215fc2d1c19d16f</anchor>
+      <arglist>(const std::array&lt; bool, 33 &gt; &amp;errors)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>operator bool</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>a50cb6e50c1ce2b5ec281dcad83f1779e</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>operator std::string</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>aebcb2a3d059c40c89f0735b9dc1b5339</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>joint_position_limits_violation</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>a44ba0d45e52639280d32cf447f967e29</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>cartesian_position_limits_violation</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>a41c8b50ecbb015a2dba1a3dbbff694b6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>self_collision_avoidance_violation</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>adf68f6333624cb5558864441a991de8c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>joint_velocity_violation</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>a803ac4acbc26350602ea2eb02b7b30c4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>cartesian_velocity_violation</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>a382fbec6b463ddcc2cbfd90340021ff1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>force_control_safety_violation</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>ae7b19674da28b11ba970c30c7d800923</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>joint_reflex</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>afb0928680c586e73d4e2cd4b42c7fe48</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>cartesian_reflex</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>a47bd58b0ab2198e4d038e0a24eafb310</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>max_goal_pose_deviation_violation</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>ac55d3624087e606cb4ffab121869d580</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>max_path_pose_deviation_violation</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>ad90cffe703ca1b782007f3ba49da587c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>cartesian_velocity_profile_safety_violation</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>afc093fc5f99e1f6cab6de4fa9bc32692</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>joint_position_motion_generator_start_pose_invalid</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>a7af91cbf61dc79304bff3ffadc51ea86</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>joint_motion_generator_position_limits_violation</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>a9536ad072868b90525c56143cbb956ef</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>joint_motion_generator_velocity_limits_violation</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>ae211638df9b0e23905c8a9d36e249207</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>joint_motion_generator_velocity_discontinuity</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>abd6da8e6a32d817a7b4848a24efd9379</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>joint_motion_generator_acceleration_discontinuity</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>a633195adca91f5ecaf1506da12f3311f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>cartesian_position_motion_generator_start_pose_invalid</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>aa910fad4992b91be1ea1c321ee9b7a1e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>cartesian_motion_generator_elbow_limit_violation</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>ac21ebdc1e0e8fb3099a7dce284550c4c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>cartesian_motion_generator_velocity_limits_violation</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>a91437c081452ef708563346b102ba894</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>cartesian_motion_generator_velocity_discontinuity</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>a17e4a9b6b7dc4cc12c1328d36cac3eaf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>cartesian_motion_generator_acceleration_discontinuity</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>a10c6ac36bf48b4a9edf91e74d9bc4837</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>cartesian_motion_generator_elbow_sign_inconsistent</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>a58b0e1199c9dded5a32bfeb110e63037</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>cartesian_motion_generator_start_elbow_invalid</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>a6d905b803bbe8a7be8490f2a94ba524a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>cartesian_motion_generator_joint_position_limits_violation</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>a73aef7473fd6d1d5b207e68fa35948c5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>cartesian_motion_generator_joint_velocity_limits_violation</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>a435d16d62a123bfbf578bc76e3780605</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>cartesian_motion_generator_joint_velocity_discontinuity</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>a1c8c56766fefc19fda5d5de909ca5b37</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>cartesian_motion_generator_joint_acceleration_discontinuity</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>a2e223ef3c771709a6a3f094adf12f9cb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>cartesian_position_motion_generator_invalid_frame</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>aa1952c6da2f81578861a19b947c97b85</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>force_controller_desired_force_tolerance_violation</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>ae474f20a64b2585dbe6496966dddff0a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>controller_torque_discontinuity</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>af40d93759ace9ee6026208110692a732</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>start_elbow_sign_inconsistent</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>aa6de1956ac056792a1dea6b9ddd52a50</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>communication_constraints_violation</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>a4d17af86c1ebb698c218796fa15f9bd7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const bool &amp;</type>
+      <name>power_limit_violation</name>
+      <anchorfile>structfranka_1_1Errors.html</anchorfile>
+      <anchor>a6c4d8cb1fb314567ebd07a6195b840f5</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>franka::Exception</name>
+    <filename>structfranka_1_1Exception.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>franka::Finishable</name>
+    <filename>structfranka_1_1Finishable.html</filename>
+    <member kind="variable">
+      <type>bool</type>
+      <name>motion_finished</name>
+      <anchorfile>structfranka_1_1Finishable.html</anchorfile>
+      <anchor>a5d48028c0f912d4a089e6220d8715f7f</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>franka::Gripper</name>
+    <filename>classfranka_1_1Gripper.html</filename>
+    <member kind="typedef">
+      <type>uint16_t</type>
+      <name>ServerVersion</name>
+      <anchorfile>classfranka_1_1Gripper.html</anchorfile>
+      <anchor>a613bf52d9433b733685d0fb9ea71602e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Gripper</name>
+      <anchorfile>classfranka_1_1Gripper.html</anchorfile>
+      <anchor>a02b30632b08001592c62d3563561afc5</anchor>
+      <arglist>(const std::string &amp;franka_address)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Gripper</name>
+      <anchorfile>classfranka_1_1Gripper.html</anchorfile>
+      <anchor>aa045ea81b36f22420f9bc6f2a256a4f0</anchor>
+      <arglist>(Gripper &amp;&amp;gripper) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Gripper &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classfranka_1_1Gripper.html</anchorfile>
+      <anchor>a3c99c6973f8951ca489c4177cfacb069</anchor>
+      <arglist>(Gripper &amp;&amp;gripper) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~Gripper</name>
+      <anchorfile>classfranka_1_1Gripper.html</anchorfile>
+      <anchor>ade253b8a35312d52c636c6aafb7b2e1d</anchor>
+      <arglist>() noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>homing</name>
+      <anchorfile>classfranka_1_1Gripper.html</anchorfile>
+      <anchor>a637792a8db171264150a40b254d46b1e</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>grasp</name>
+      <anchorfile>classfranka_1_1Gripper.html</anchorfile>
+      <anchor>a3761541c9d7dd5d3be8e290fe05d93ad</anchor>
+      <arglist>(double width, double speed, double force) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>move</name>
+      <anchorfile>classfranka_1_1Gripper.html</anchorfile>
+      <anchor>a331720c9e26f23a5fa3de1e171b1a684</anchor>
+      <arglist>(double width, double speed) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>stop</name>
+      <anchorfile>classfranka_1_1Gripper.html</anchorfile>
+      <anchor>a083c93b41d93e75e5d0675de6ccf60fc</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>GripperState</type>
+      <name>readOnce</name>
+      <anchorfile>classfranka_1_1Gripper.html</anchorfile>
+      <anchor>ab8bdd20c5e146355cec5af4db3c942d0</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>ServerVersion</type>
+      <name>serverVersion</name>
+      <anchorfile>classfranka_1_1Gripper.html</anchorfile>
+      <anchor>a8b0b4246c042465fb00871b31efdbd8b</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>franka::GripperState</name>
+    <filename>structfranka_1_1GripperState.html</filename>
+    <member kind="variable">
+      <type>double</type>
+      <name>width</name>
+      <anchorfile>structfranka_1_1GripperState.html</anchorfile>
+      <anchor>adf095f446ec39a9a48e120b209dcd6e9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>double</type>
+      <name>max_width</name>
+      <anchorfile>structfranka_1_1GripperState.html</anchorfile>
+      <anchor>ab71a26356c2898c49609bf991843e166</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
+      <name>is_grasped</name>
+      <anchorfile>structfranka_1_1GripperState.html</anchorfile>
+      <anchor>aa65b46313e740454ead9c9ea27e7bf8d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint16_t</type>
+      <name>temperature</name>
+      <anchorfile>structfranka_1_1GripperState.html</anchorfile>
+      <anchor>aa6733fa786dbf3b073acbaf3779e34b3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>Duration</type>
+      <name>time</name>
+      <anchorfile>structfranka_1_1GripperState.html</anchorfile>
+      <anchor>a80bf474b0e4351e2eefab62d1bd10c07</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>franka::IncompatibleVersionException</name>
+    <filename>structfranka_1_1IncompatibleVersionException.html</filename>
+    <base>franka::Exception</base>
+  </compound>
+  <compound kind="struct">
+    <name>franka::InvalidOperationException</name>
+    <filename>structfranka_1_1InvalidOperationException.html</filename>
+    <base>franka::Exception</base>
+  </compound>
+  <compound kind="class">
+    <name>franka::JointPositions</name>
+    <filename>classfranka_1_1JointPositions.html</filename>
+    <base>franka::Finishable</base>
+    <member kind="function">
+      <type></type>
+      <name>JointPositions</name>
+      <anchorfile>classfranka_1_1JointPositions.html</anchorfile>
+      <anchor>a57bc9d7e033493b1182333276af5ce84</anchor>
+      <arglist>(const std::array&lt; double, 7 &gt; &amp;joint_positions) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>JointPositions</name>
+      <anchorfile>classfranka_1_1JointPositions.html</anchorfile>
+      <anchor>a1e2006bccc9de89d8eb1a4d1c4da2fb8</anchor>
+      <arglist>(std::initializer_list&lt; double &gt; joint_positions)</arglist>
+    </member>
+    <member kind="variable">
+      <type>std::array&lt; double, 7 &gt;</type>
+      <name>q</name>
+      <anchorfile>classfranka_1_1JointPositions.html</anchorfile>
+      <anchor>a40e9098abe1c51cd48e17e41fbf78337</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>franka::JointVelocities</name>
+    <filename>classfranka_1_1JointVelocities.html</filename>
+    <base>franka::Finishable</base>
+    <member kind="function">
+      <type></type>
+      <name>JointVelocities</name>
+      <anchorfile>classfranka_1_1JointVelocities.html</anchorfile>
+      <anchor>a1130f851055de3b7ebe9e6fbac960826</anchor>
+      <arglist>(const std::array&lt; double, 7 &gt; &amp;joint_velocities) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>JointVelocities</name>
+      <anchorfile>classfranka_1_1JointVelocities.html</anchorfile>
+      <anchor>aed384fad8e302638c2e5baea6378c2d2</anchor>
+      <arglist>(std::initializer_list&lt; double &gt; joint_velocities)</arglist>
+    </member>
+    <member kind="variable">
+      <type>std::array&lt; double, 7 &gt;</type>
+      <name>dq</name>
+      <anchorfile>classfranka_1_1JointVelocities.html</anchorfile>
+      <anchor>a14fddb6fe7a7c4034dc82c283de8c2d3</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>franka::Model</name>
+    <filename>classfranka_1_1Model.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>Model</name>
+      <anchorfile>classfranka_1_1Model.html</anchorfile>
+      <anchor>a751d939935eb51f06dcfd18c6c756ceb</anchor>
+      <arglist>(franka::Network &amp;network)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Model</name>
+      <anchorfile>classfranka_1_1Model.html</anchorfile>
+      <anchor>a8b58ff37f62512aecdcd0e6aabfd9548</anchor>
+      <arglist>(Model &amp;&amp;model) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Model &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classfranka_1_1Model.html</anchorfile>
+      <anchor>a625529a4c9aed7783c9c6e150dbba793</anchor>
+      <arglist>(Model &amp;&amp;model) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~Model</name>
+      <anchorfile>classfranka_1_1Model.html</anchorfile>
+      <anchor>a1d6ffa26afc6cfdff7e329d15b8bd65e</anchor>
+      <arglist>() noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>std::array&lt; double, 16 &gt;</type>
+      <name>pose</name>
+      <anchorfile>classfranka_1_1Model.html</anchorfile>
+      <anchor>af9c71bfa104ee66bcf6b2b8376cc4beb</anchor>
+      <arglist>(Frame frame, const franka::RobotState &amp;robot_state) const </arglist>
+    </member>
+    <member kind="function">
+      <type>std::array&lt; double, 42 &gt;</type>
+      <name>bodyJacobian</name>
+      <anchorfile>classfranka_1_1Model.html</anchorfile>
+      <anchor>ac67fb28b46818f5827f958f1019ecddf</anchor>
+      <arglist>(Frame frame, const franka::RobotState &amp;robot_state) const </arglist>
+    </member>
+    <member kind="function">
+      <type>std::array&lt; double, 42 &gt;</type>
+      <name>zeroJacobian</name>
+      <anchorfile>classfranka_1_1Model.html</anchorfile>
+      <anchor>a77d4fcef7568ff050dfe29d1471a189b</anchor>
+      <arglist>(Frame frame, const franka::RobotState &amp;robot_state) const </arglist>
+    </member>
+    <member kind="function">
+      <type>std::array&lt; double, 49 &gt;</type>
+      <name>mass</name>
+      <anchorfile>classfranka_1_1Model.html</anchorfile>
+      <anchor>a941eaabce15526b6d83820ee960ce9e8</anchor>
+      <arglist>(const franka::RobotState &amp;robot_state, const std::array&lt; double, 9 &gt; &amp;load_inertia, double load_mass, const std::array&lt; double, 3 &gt; &amp;F_x_Cload) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>std::array&lt; double, 7 &gt;</type>
+      <name>coriolis</name>
+      <anchorfile>classfranka_1_1Model.html</anchorfile>
+      <anchor>aec7aba7caacdd93ed5526637542ffa03</anchor>
+      <arglist>(const franka::RobotState &amp;robot_state, const std::array&lt; double, 9 &gt; &amp;load_inertia, double load_mass, const std::array&lt; double, 3 &gt; &amp;F_x_Cload) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>std::array&lt; double, 7 &gt;</type>
+      <name>gravity</name>
+      <anchorfile>classfranka_1_1Model.html</anchorfile>
+      <anchor>af65b1a91aa19c91d8584defeed7e6a13</anchor>
+      <arglist>(const franka::RobotState &amp;robot_state, double load_mass, const std::array&lt; double, 3 &gt; &amp;F_x_Cload, const std::array&lt; double, 3 &gt; &amp;gravity_earth={{0., 0.,-9.81}}) const noexcept</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>franka::ModelException</name>
+    <filename>structfranka_1_1ModelException.html</filename>
+    <base>franka::Exception</base>
+  </compound>
+  <compound kind="struct">
+    <name>franka::NetworkException</name>
+    <filename>structfranka_1_1NetworkException.html</filename>
+    <base>franka::Exception</base>
+  </compound>
+  <compound kind="struct">
+    <name>franka::ProtocolException</name>
+    <filename>structfranka_1_1ProtocolException.html</filename>
+    <base>franka::Exception</base>
+  </compound>
+  <compound kind="struct">
+    <name>franka::RealtimeException</name>
+    <filename>structfranka_1_1RealtimeException.html</filename>
+    <base>franka::Exception</base>
+  </compound>
+  <compound kind="class">
+    <name>franka::Robot</name>
+    <filename>classfranka_1_1Robot.html</filename>
+    <member kind="typedef">
+      <type>uint16_t</type>
+      <name>ServerVersion</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>ad1dd3dccff6f33691d2c66eaa5ac5a10</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Robot</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a60a488ff409e62c6e045e0c6a16327b5</anchor>
+      <arglist>(const std::string &amp;franka_address, RealtimeConfig realtime_config=RealtimeConfig::kEnforce)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Robot</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a378d415475336082e81a35b9811dc6c2</anchor>
+      <arglist>(Robot &amp;&amp;other) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Robot &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a35465b8497a7adbd277e70e98b7d97a7</anchor>
+      <arglist>(Robot &amp;&amp;other) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~Robot</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a28abb25d25b5a1ce4463e32a518682e4</anchor>
+      <arglist>() noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>read</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a82f85eed20426901a7e77b66c041664b</anchor>
+      <arglist>(std::function&lt; bool(const RobotState &amp;)&gt; read_callback)</arglist>
+    </member>
+    <member kind="function">
+      <type>RobotState</type>
+      <name>readOnce</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a7ea7074a07b63fcf6933e97b078c7168</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>Model</type>
+      <name>loadModel</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a2da598c539469827409ac7e3bb61d5da</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>ServerVersion</type>
+      <name>serverVersion</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a3b864e16b7accafdf1a755dc21765701</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>control</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>adccee7867c3f8fcff398ef34dadb723e</anchor>
+      <arglist>(std::function&lt; Torques(const RobotState &amp;, franka::Duration)&gt; control_callback)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>control</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a9ae1f0353c69fc00007f220247dc0eb7</anchor>
+      <arglist>(std::function&lt; Torques(const RobotState &amp;, franka::Duration)&gt; control_callback, std::function&lt; JointPositions(const RobotState &amp;, franka::Duration)&gt; motion_generator_callback)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>control</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a92e7d191a54eb6fb26f17c86acfba377</anchor>
+      <arglist>(std::function&lt; Torques(const RobotState &amp;, franka::Duration)&gt; control_callback, std::function&lt; JointVelocities(const RobotState &amp;, franka::Duration)&gt; motion_generator_callback)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>control</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a9c672cf0076c6b15d8a8d74cf5578764</anchor>
+      <arglist>(std::function&lt; Torques(const RobotState &amp;, franka::Duration)&gt; control_callback, std::function&lt; CartesianPose(const RobotState &amp;, franka::Duration)&gt; motion_generator_callback)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>control</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>ac1085e978626075e893069e44682e707</anchor>
+      <arglist>(std::function&lt; Torques(const RobotState &amp;, franka::Duration)&gt; control_callback, std::function&lt; CartesianVelocities(const RobotState &amp;, franka::Duration)&gt; motion_generator_callback)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>control</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a85d7e26f4c06762789a64eb4b14d1908</anchor>
+      <arglist>(std::function&lt; JointPositions(const RobotState &amp;, franka::Duration)&gt; motion_generator_callback, ControllerMode controller_mode=ControllerMode::kJointImpedance)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>control</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a530a20bf41d34b4d19424e071b7e3d03</anchor>
+      <arglist>(std::function&lt; JointVelocities(const RobotState &amp;, franka::Duration)&gt; motion_generator_callback, ControllerMode controller_mode=ControllerMode::kJointImpedance)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>control</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>aa7703dd0eba031ac36079c1f47d0d2eb</anchor>
+      <arglist>(std::function&lt; CartesianPose(const RobotState &amp;, franka::Duration)&gt; motion_generator_callback, ControllerMode controller_mode=ControllerMode::kJointImpedance)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>control</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a0386e15f0af30c5a8268fcbf19f1d6b0</anchor>
+      <arglist>(std::function&lt; CartesianVelocities(const RobotState &amp;, franka::Duration)&gt; motion_generator_callback, ControllerMode controller_mode=ControllerMode::kJointImpedance)</arglist>
+    </member>
+    <member kind="function">
+      <type>VirtualWallCuboid</type>
+      <name>getVirtualWall</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a1739f6dc13f0c33b3213375323c93399</anchor>
+      <arglist>(int32_t id)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setCollisionBehavior</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a168e1214ac36d74ac64f894332b84534</anchor>
+      <arglist>(const std::array&lt; double, 7 &gt; &amp;lower_torque_thresholds_acceleration, const std::array&lt; double, 7 &gt; &amp;upper_torque_thresholds_acceleration, const std::array&lt; double, 7 &gt; &amp;lower_torque_thresholds_nominal, const std::array&lt; double, 7 &gt; &amp;upper_torque_thresholds_nominal, const std::array&lt; double, 6 &gt; &amp;lower_force_thresholds_acceleration, const std::array&lt; double, 6 &gt; &amp;upper_force_thresholds_acceleration, const std::array&lt; double, 6 &gt; &amp;lower_force_thresholds_nominal, const std::array&lt; double, 6 &gt; &amp;upper_force_thresholds_nominal)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setCollisionBehavior</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>aa188f58c9025594be4d1700da744a962</anchor>
+      <arglist>(const std::array&lt; double, 7 &gt; &amp;lower_torque_thresholds, const std::array&lt; double, 7 &gt; &amp;upper_torque_thresholds, const std::array&lt; double, 6 &gt; &amp;lower_force_thresholds, const std::array&lt; double, 6 &gt; &amp;upper_force_thresholds)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setJointImpedance</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>aa18a28697cf6e3be16c6cff2dd839560</anchor>
+      <arglist>(const std::array&lt; double, 7 &gt; &amp;K_theta)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setCartesianImpedance</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>ac2678c5c31cc8c0627ecda7485f81f6d</anchor>
+      <arglist>(const std::array&lt; double, 6 &gt; &amp;K_x)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setGuidingMode</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a7992cee203e66f9a61fe2f318ef88a26</anchor>
+      <arglist>(const std::array&lt; bool, 6 &gt; &amp;guiding_mode, bool elbow)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setK</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>ad1cf59d1b11306d80cd3c7144a989c56</anchor>
+      <arglist>(const std::array&lt; double, 16 &gt; &amp;EE_T_K)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setEE</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a5043fca4c35f63b492d9e67c74ddc73b</anchor>
+      <arglist>(const std::array&lt; double, 16 &gt; &amp;F_T_EE)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setLoad</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>afcb708df10f24563dbcf7d5b907b4a15</anchor>
+      <arglist>(double load_mass, const std::array&lt; double, 3 &gt; &amp;F_x_Cload, const std::array&lt; double, 9 &gt; &amp;load_inertia)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>automaticErrorRecovery</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>af682aa673415718715bd859116bc2fed</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>stop</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a69cb08e075a81ecf3f26e94d26a06296</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>control</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>adccee7867c3f8fcff398ef34dadb723e</anchor>
+      <arglist>(std::function&lt; Torques(const RobotState &amp;, franka::Duration)&gt; control_callback)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>control</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a9ae1f0353c69fc00007f220247dc0eb7</anchor>
+      <arglist>(std::function&lt; Torques(const RobotState &amp;, franka::Duration)&gt; control_callback, std::function&lt; JointPositions(const RobotState &amp;, franka::Duration)&gt; motion_generator_callback)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>control</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a92e7d191a54eb6fb26f17c86acfba377</anchor>
+      <arglist>(std::function&lt; Torques(const RobotState &amp;, franka::Duration)&gt; control_callback, std::function&lt; JointVelocities(const RobotState &amp;, franka::Duration)&gt; motion_generator_callback)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>control</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a9c672cf0076c6b15d8a8d74cf5578764</anchor>
+      <arglist>(std::function&lt; Torques(const RobotState &amp;, franka::Duration)&gt; control_callback, std::function&lt; CartesianPose(const RobotState &amp;, franka::Duration)&gt; motion_generator_callback)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>control</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>ac1085e978626075e893069e44682e707</anchor>
+      <arglist>(std::function&lt; Torques(const RobotState &amp;, franka::Duration)&gt; control_callback, std::function&lt; CartesianVelocities(const RobotState &amp;, franka::Duration)&gt; motion_generator_callback)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>control</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a85d7e26f4c06762789a64eb4b14d1908</anchor>
+      <arglist>(std::function&lt; JointPositions(const RobotState &amp;, franka::Duration)&gt; motion_generator_callback, ControllerMode controller_mode=ControllerMode::kJointImpedance)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>control</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a530a20bf41d34b4d19424e071b7e3d03</anchor>
+      <arglist>(std::function&lt; JointVelocities(const RobotState &amp;, franka::Duration)&gt; motion_generator_callback, ControllerMode controller_mode=ControllerMode::kJointImpedance)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>control</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>aa7703dd0eba031ac36079c1f47d0d2eb</anchor>
+      <arglist>(std::function&lt; CartesianPose(const RobotState &amp;, franka::Duration)&gt; motion_generator_callback, ControllerMode controller_mode=ControllerMode::kJointImpedance)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>control</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a0386e15f0af30c5a8268fcbf19f1d6b0</anchor>
+      <arglist>(std::function&lt; CartesianVelocities(const RobotState &amp;, franka::Duration)&gt; motion_generator_callback, ControllerMode controller_mode=ControllerMode::kJointImpedance)</arglist>
+    </member>
+    <member kind="function">
+      <type>VirtualWallCuboid</type>
+      <name>getVirtualWall</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a1739f6dc13f0c33b3213375323c93399</anchor>
+      <arglist>(int32_t id)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setCollisionBehavior</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a168e1214ac36d74ac64f894332b84534</anchor>
+      <arglist>(const std::array&lt; double, 7 &gt; &amp;lower_torque_thresholds_acceleration, const std::array&lt; double, 7 &gt; &amp;upper_torque_thresholds_acceleration, const std::array&lt; double, 7 &gt; &amp;lower_torque_thresholds_nominal, const std::array&lt; double, 7 &gt; &amp;upper_torque_thresholds_nominal, const std::array&lt; double, 6 &gt; &amp;lower_force_thresholds_acceleration, const std::array&lt; double, 6 &gt; &amp;upper_force_thresholds_acceleration, const std::array&lt; double, 6 &gt; &amp;lower_force_thresholds_nominal, const std::array&lt; double, 6 &gt; &amp;upper_force_thresholds_nominal)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setCollisionBehavior</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>aa188f58c9025594be4d1700da744a962</anchor>
+      <arglist>(const std::array&lt; double, 7 &gt; &amp;lower_torque_thresholds, const std::array&lt; double, 7 &gt; &amp;upper_torque_thresholds, const std::array&lt; double, 6 &gt; &amp;lower_force_thresholds, const std::array&lt; double, 6 &gt; &amp;upper_force_thresholds)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setJointImpedance</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>aa18a28697cf6e3be16c6cff2dd839560</anchor>
+      <arglist>(const std::array&lt; double, 7 &gt; &amp;K_theta)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setCartesianImpedance</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>ac2678c5c31cc8c0627ecda7485f81f6d</anchor>
+      <arglist>(const std::array&lt; double, 6 &gt; &amp;K_x)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setGuidingMode</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a7992cee203e66f9a61fe2f318ef88a26</anchor>
+      <arglist>(const std::array&lt; bool, 6 &gt; &amp;guiding_mode, bool elbow)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setK</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>ad1cf59d1b11306d80cd3c7144a989c56</anchor>
+      <arglist>(const std::array&lt; double, 16 &gt; &amp;EE_T_K)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setEE</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a5043fca4c35f63b492d9e67c74ddc73b</anchor>
+      <arglist>(const std::array&lt; double, 16 &gt; &amp;F_T_EE)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setLoad</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>afcb708df10f24563dbcf7d5b907b4a15</anchor>
+      <arglist>(double load_mass, const std::array&lt; double, 3 &gt; &amp;F_x_Cload, const std::array&lt; double, 9 &gt; &amp;load_inertia)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>automaticErrorRecovery</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>af682aa673415718715bd859116bc2fed</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>stop</name>
+      <anchorfile>classfranka_1_1Robot.html</anchorfile>
+      <anchor>a69cb08e075a81ecf3f26e94d26a06296</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>franka::RobotState</name>
+    <filename>structfranka_1_1RobotState.html</filename>
+    <member kind="variable">
+      <type>std::array&lt; double, 16 &gt;</type>
+      <name>O_T_EE</name>
+      <anchorfile>structfranka_1_1RobotState.html</anchorfile>
+      <anchor>a193781d47722b32925e0ea7ac415f442</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::array&lt; double, 16 &gt;</type>
+      <name>O_T_EE_d</name>
+      <anchorfile>structfranka_1_1RobotState.html</anchorfile>
+      <anchor>a3e5b4b7687856e92d826044be7d15733</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::array&lt; double, 16 &gt;</type>
+      <name>F_T_EE</name>
+      <anchorfile>structfranka_1_1RobotState.html</anchorfile>
+      <anchor>a705b85049fef747008b0eba8284c8057</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::array&lt; double, 16 &gt;</type>
+      <name>EE_T_K</name>
+      <anchorfile>structfranka_1_1RobotState.html</anchorfile>
+      <anchor>aeb78a3b4b76d4f57b9898cbea3a0f7aa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>double</type>
+      <name>m_load</name>
+      <anchorfile>structfranka_1_1RobotState.html</anchorfile>
+      <anchor>a99ea4ab9c5a42a5c17365ed8fd730cd1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::array&lt; double, 9 &gt;</type>
+      <name>I_load</name>
+      <anchorfile>structfranka_1_1RobotState.html</anchorfile>
+      <anchor>a5b194153497eff98049681f852118f82</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::array&lt; double, 3 &gt;</type>
+      <name>F_x_Cload</name>
+      <anchorfile>structfranka_1_1RobotState.html</anchorfile>
+      <anchor>a48e921e6215ad32f36e424b4d7b66a89</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::array&lt; double, 2 &gt;</type>
+      <name>elbow</name>
+      <anchorfile>structfranka_1_1RobotState.html</anchorfile>
+      <anchor>a43485841c427d70e7f36a912cc3116d1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::array&lt; double, 2 &gt;</type>
+      <name>elbow_d</name>
+      <anchorfile>structfranka_1_1RobotState.html</anchorfile>
+      <anchor>a295dada05d8588fc3c19a74fd427dcc0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::array&lt; double, 7 &gt;</type>
+      <name>tau_J</name>
+      <anchorfile>structfranka_1_1RobotState.html</anchorfile>
+      <anchor>ad90e2518d661da0d8fa4c864bae210e5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::array&lt; double, 7 &gt;</type>
+      <name>dtau_J</name>
+      <anchorfile>structfranka_1_1RobotState.html</anchorfile>
+      <anchor>ae6b0d4ee0d7b36240a2165e6ded6f4b9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::array&lt; double, 7 &gt;</type>
+      <name>q</name>
+      <anchorfile>structfranka_1_1RobotState.html</anchorfile>
+      <anchor>ade3335d1ac2f6c44741a916d565f7091</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::array&lt; double, 7 &gt;</type>
+      <name>q_d</name>
+      <anchorfile>structfranka_1_1RobotState.html</anchorfile>
+      <anchor>a706045af1b176049e9e56df755325bd2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::array&lt; double, 7 &gt;</type>
+      <name>dq</name>
+      <anchorfile>structfranka_1_1RobotState.html</anchorfile>
+      <anchor>af372a0081d72bc7b4fe873f99c7b2d8c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::array&lt; double, 7 &gt;</type>
+      <name>dq_d</name>
+      <anchorfile>structfranka_1_1RobotState.html</anchorfile>
+      <anchor>aed294a088be27b927be9575a18bec949</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::array&lt; double, 7 &gt;</type>
+      <name>joint_contact</name>
+      <anchorfile>structfranka_1_1RobotState.html</anchorfile>
+      <anchor>a7243c652a8efe58c343a0d1252302fa4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::array&lt; double, 6 &gt;</type>
+      <name>cartesian_contact</name>
+      <anchorfile>structfranka_1_1RobotState.html</anchorfile>
+      <anchor>a7fc1f0358d2104d39d301d70544fa6c1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::array&lt; double, 7 &gt;</type>
+      <name>joint_collision</name>
+      <anchorfile>structfranka_1_1RobotState.html</anchorfile>
+      <anchor>a38757bafd4dd8e138410de1dca0c36f8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::array&lt; double, 6 &gt;</type>
+      <name>cartesian_collision</name>
+      <anchorfile>structfranka_1_1RobotState.html</anchorfile>
+      <anchor>a52c20478f4c1e162df38582ea9bda044</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::array&lt; double, 7 &gt;</type>
+      <name>tau_ext_hat_filtered</name>
+      <anchorfile>structfranka_1_1RobotState.html</anchorfile>
+      <anchor>acdef8005828d193e45b128085a9e363b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::array&lt; double, 6 &gt;</type>
+      <name>O_F_ext_hat_K</name>
+      <anchorfile>structfranka_1_1RobotState.html</anchorfile>
+      <anchor>a5a830b4f9d6a3c2dc92e4a9cc6050493</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::array&lt; double, 6 &gt;</type>
+      <name>K_F_ext_hat_K</name>
+      <anchorfile>structfranka_1_1RobotState.html</anchorfile>
+      <anchor>a96267d443c05fcc58d7ac32f63912649</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>Errors</type>
+      <name>current_errors</name>
+      <anchorfile>structfranka_1_1RobotState.html</anchorfile>
+      <anchor>abc5515f7a27f5de82396ea792a5ecb48</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>Errors</type>
+      <name>last_motion_errors</name>
+      <anchorfile>structfranka_1_1RobotState.html</anchorfile>
+      <anchor>a06d7019f85339409e932dc086b7a260b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>double</type>
+      <name>control_command_success_rate</name>
+      <anchorfile>structfranka_1_1RobotState.html</anchorfile>
+      <anchor>af208572613a6afcdc61a24970c71fa28</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>RobotMode</type>
+      <name>robot_mode</name>
+      <anchorfile>structfranka_1_1RobotState.html</anchorfile>
+      <anchor>a4943ae75e0e2ec534e0afac31cbcc987</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>Duration</type>
+      <name>time</name>
+      <anchorfile>structfranka_1_1RobotState.html</anchorfile>
+      <anchor>aabfdabeaef8c1858c52dd32344bdd039</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>franka::Torques</name>
+    <filename>classfranka_1_1Torques.html</filename>
+    <base>franka::Finishable</base>
+    <member kind="function">
+      <type></type>
+      <name>Torques</name>
+      <anchorfile>classfranka_1_1Torques.html</anchorfile>
+      <anchor>a509d63195827289ffc645e4b62a9750d</anchor>
+      <arglist>(const std::array&lt; double, 7 &gt; &amp;torques) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Torques</name>
+      <anchorfile>classfranka_1_1Torques.html</anchorfile>
+      <anchor>a744a08e16dcfc40b3a90ab6a85bac0d8</anchor>
+      <arglist>(std::initializer_list&lt; double &gt; torques)</arglist>
+    </member>
+    <member kind="variable">
+      <type>std::array&lt; double, 7 &gt;</type>
+      <name>tau_J</name>
+      <anchorfile>classfranka_1_1Torques.html</anchorfile>
+      <anchor>ac2a266cc2d3b7e0fb4f8eff045dbaed8</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>franka::VirtualWallCuboid</name>
+    <filename>structfranka_1_1VirtualWallCuboid.html</filename>
+    <member kind="variable">
+      <type>int32_t</type>
+      <name>id</name>
+      <anchorfile>structfranka_1_1VirtualWallCuboid.html</anchorfile>
+      <anchor>a2cee9b57fa420372a9576899875ad71a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::array&lt; double, 3 &gt;</type>
+      <name>p_min</name>
+      <anchorfile>structfranka_1_1VirtualWallCuboid.html</anchorfile>
+      <anchor>a8fbfee347f96433fae8907a66ea49111</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::array&lt; double, 3 &gt;</type>
+      <name>p_max</name>
+      <anchorfile>structfranka_1_1VirtualWallCuboid.html</anchorfile>
+      <anchor>ab7628e6ad1aba8e30cebc5ddb07a96ee</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::array&lt; double, 16 &gt;</type>
+      <name>p_frame</name>
+      <anchorfile>structfranka_1_1VirtualWallCuboid.html</anchorfile>
+      <anchor>ab34ba4f99676a36a4e1171fd8b431391</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
+      <name>active</name>
+      <anchorfile>structfranka_1_1VirtualWallCuboid.html</anchorfile>
+      <anchor>a69a20329da226fe49702b7d725670042</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="page">
+    <name>index</name>
+    <title>libfranka: C++ library for Franka Emika research robots</title>
+    <filename>index</filename>
+  </compound>
+</tagfile>
