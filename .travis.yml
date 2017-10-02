@@ -37,4 +37,4 @@ before_script:
   - docker build -t worker $TRAVIS_BUILD_DIR/.ci
 
 script:
-  - docker run -w /workspace -v $TRAVIS_BUILD_DIR:/workspace worker .ci/$CI_TARGET.sh
+  - docker run -u "$(id -u):$(id -g)" -w /workspace -v $TRAVIS_BUILD_DIR:/workspace worker .ci/$CI_TARGET.sh
