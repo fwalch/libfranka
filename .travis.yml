@@ -6,11 +6,12 @@ services:
 
 matrix:
   include:
-    - env: CI_TARGET=debug
+    #- env: CI_TARGET=debug
 
     - env: CI_TARGET=release
       after_success:
         - cd $TRAVIS_BUILD_DIR/build-release/doc
+        - ls -la .
         - touch html/.nojekyll
         - mv tags.xml html/tags.xml
       deploy:
@@ -21,10 +22,10 @@ matrix:
         on:
           branch: doxygen-generate-tagfile
 
-    - env: CI_TARGET=coverage
-      after_success: bash <(curl -s https://codecov.io/bash) -g "*/test/*"
+          #- env: CI_TARGET=coverage
+          #after_success: bash <(curl -s https://codecov.io/bash) -g "*/test/*"
 
-    - env: CI_TARGET=lint
+          #- env: CI_TARGET=lint
 
 before_install:
   - sudo apt-get update
