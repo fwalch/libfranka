@@ -19,7 +19,7 @@ matrix:
         github_token: $GITHUB_TOKEN
         local_dir: $TRAVIS_BUILD_DIR/build-release/doc/html
         on:
-          branch: master
+          branch: doxygen-generate-tagfile
 
     - env: CI_TARGET=coverage
       after_success: bash <(curl -s https://codecov.io/bash) -g "*/test/*"
