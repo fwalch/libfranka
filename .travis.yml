@@ -9,7 +9,10 @@ matrix:
     - env: CI_TARGET=debug
 
     - env: CI_TARGET=release
-      after_success: touch build-release/doc/html/.nojekyll
+      after_success:
+        - cd $TRAVIS_BUILD_DIR/build-release/doc
+        - touch html/.nojekyll
+        - mv tags.xml html/tags.xml
       deploy:
         provider: pages
         skip_cleanup: true
